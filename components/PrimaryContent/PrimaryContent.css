@@ -1,0 +1,41 @@
+.root {
+  padding: 30px 40px;
+  color: #444;
+  font-size: 14px;
+}
+
+.heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.sub-heading {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #bbb;
+  letter-spacing: 0.8px;
+  font-weight: 400;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.p {
+  line-height: 1.8;
+  letter-spacing: 0.4px;
+}
+
+.spec {
+  padding-top: 50px;
+}
+
+.spec + .spec {
+  padding-top: 70px;
+}
+
+.spec:last-child {
+  margin-bottom: 50px;
+}
+
+.spec + .heading {
+  margin-top: 40px;
+}

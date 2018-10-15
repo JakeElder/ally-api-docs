@@ -1,0 +1,18 @@
+.root {
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+}
+
+.label {
+  font-weight: 500;
+  width: 180px;
+  text-align: right;
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.content {
+  border-top: 1px solid #f0f0f0;
+}

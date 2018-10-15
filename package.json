@@ -1,0 +1,22 @@
+{
+  "name": "@jakeelder/ally-api-docs",
+  "version": "0.1.0",
+  "main": "dist/index.html",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-react": "^7.0.0",
+    "classnames": "^2.2.6",
+    "parcel": "^1.10.1",
+    "postcss-camel-case": "^1.0.1",
+    "postcss-modules": "^1.4.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.5.2",
+    "react-syntax-highlighter": "^8.0.1",
+    "webpack-html-plugin": "^0.1.1"
+  },
+  "dependencies": {
+    "change-case": "^3.0.2",
+    "object-path": "^0.11.4"
+  }
+}

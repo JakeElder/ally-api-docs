@@ -1,0 +1,43 @@
+.root {
+  display: flex;
+  line-height: 1.6;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+
+.meta {
+  flex: 0 0 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  white-space: nowrap;
+  margin-right: 24px;
+}
+
+.id {
+  font-weight: 400;
+}
+
+.type {
+  font-size: 11px;
+  color: #aaa;
+}
+
+.description {
+  flex: 1;
+}
+
+.em {
+  font-weight: 400;
+}
+
+.nested {
+  padding-top: 18px;
+}
+
+.required {
+  color: #ffae54;
+  font-size: 9px;
+  font-weight: 400;
+  text-transform: uppercase;
+}

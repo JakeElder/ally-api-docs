@@ -1,0 +1,17 @@
+.root {
+  color: #b93068;
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+  background-color: #fafafa;
+  padding-left: 6px;
+  padding-right: 6px;
+  font-size: 12px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-weight: 400;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.subtle {
+  color: #666;
+}

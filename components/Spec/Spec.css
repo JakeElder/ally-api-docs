@@ -1,0 +1,12 @@
+.root:not(.is-nested) {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.entry {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.entry:not(:last-child) {
+  border-bottom: 1px solid #f0f0f0;
+}

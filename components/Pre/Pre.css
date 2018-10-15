@@ -1,0 +1,8 @@
+.root {
+  font-family: 'Source Code Pro', monospace;
+  background-color: #1b4b69;
+  padding: 16px 20px;
+  border-radius: 2px;
+  line-height: 1.6;
+  font-size: 12px;
+}

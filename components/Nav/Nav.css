@@ -1,0 +1,41 @@
+.section:not(last-child) {
+  margin-bottom: 36px;
+  font-size: 14px;
+}
+
+.section-heading {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #bbb;
+  letter-spacing: 0.8px;
+  margin-bottom: 8px;
+}
+
+.links {
+  line-height: 28px;
+}
+
+.entry {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.link {
+  color: #777;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+}
+
+.active > .link {
+  color: #3287bc;
+}
+
+.sub-section {
+  margin-left: 16px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 13px;
+  line-height: 30px;
+}

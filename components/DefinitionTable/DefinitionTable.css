@@ -1,0 +1,27 @@
+.root {
+  border: 1px solid #4186b0;
+  border-radius: 2px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.entry {
+  height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+.entry:nth-child(even) {
+  background-color: #3880ad;
+}
+
+.term {
+  flex: 0 0 140px;
+  text-align: right;
+  font-weight: 400;
+  margin-right: 26px;
+}
+
+.description {
+  flex: 1;
+}

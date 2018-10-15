@@ -1,0 +1,306 @@
+.Layout-root {
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  height: 100vh;
+}
+
+.Layout-header-and-nav,
+.Layout-content {
+  overflow: auto;
+}
+
+.Layout-header-and-nav {
+  flex: 0 0 220px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Layout-header {
+  background-color: #2c79a8;
+  flex: 0 0 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.Layout-heading {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Layout-api-text {
+  opacity: 0.3;
+  position: relative;
+  top: 2px;
+}
+
+.Layout-nav {
+  flex: 1;
+  padding: 30px 20px 0 20px;
+  background-color: #fafafa;
+  border-right: 1px solid #eee;
+}
+
+.Layout-content {
+  flex: 1;
+}
+.Nav-section:not(last-child) {
+  margin-bottom: 36px;
+  font-size: 14px;
+}
+
+.Nav-section-heading {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #bbb;
+  letter-spacing: 0.8px;
+  margin-bottom: 8px;
+}
+
+.Nav-links {
+  line-height: 28px;
+}
+
+.Nav-entry {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.Nav-link {
+  color: #777;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+}
+
+.Nav-active > .Nav-link {
+  color: #3287bc;
+}
+
+.Nav-sub-section {
+  margin-left: 16px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 13px;
+  line-height: 30px;
+}
+.PrimaryContent-root {
+  padding: 30px 40px;
+  color: #444;
+  font-size: 14px;
+}
+
+.PrimaryContent-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.PrimaryContent-sub-heading {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #bbb;
+  letter-spacing: 0.8px;
+  font-weight: 400;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.PrimaryContent-p {
+  line-height: 1.8;
+  letter-spacing: 0.4px;
+}
+
+.PrimaryContent-spec {
+  padding-top: 50px;
+}
+
+.PrimaryContent-spec + .PrimaryContent-spec {
+  padding-top: 70px;
+}
+
+.PrimaryContent-spec:last-child {
+  margin-bottom: 50px;
+}
+
+.PrimaryContent-spec + .PrimaryContent-heading {
+  margin-top: 40px;
+}
+.SecondaryContent-root {
+  padding: 30px 40px;
+  color: #fff;
+}
+
+.SecondaryContent-heading {
+  font-size: 15px;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+.SecondaryContent-p {
+  line-height: 1.6;
+}
+
+.SecondaryContent-request {
+  margin-bottom: 20px;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 16px;
+  font-weight: 400;
+}
+.Pre-root {
+  font-family: 'Source Code Pro', monospace;
+  background-color: #1b4b69;
+  padding: 16px 20px;
+  border-radius: 2px;
+  line-height: 1.6;
+  font-size: 12px;
+}
+.A-root {
+  color: #3287bc;
+  text-decoration: none;
+}
+.Section-root {
+  display: flex;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.Section-primary,
+.Section-secondary {
+  flex: 1 0 0;
+  overflow: auto;
+}
+
+.Section-secondary {
+  background-color: #2c79a8;
+  color: #fff;
+}
+
+.Section-scored .Section-primary {
+  border-bottom: 1px solid #eee;
+}
+
+.Section-scored .Section-secondary {
+  border-bottom: 1px solid #4186b0;
+}
+.DefinitionTable-root {
+  border: 1px solid #4186b0;
+  border-radius: 2px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.DefinitionTable-entry {
+  height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+.DefinitionTable-entry:nth-child(even) {
+  background-color: #3880ad;
+}
+
+.DefinitionTable-term {
+  flex: 0 0 140px;
+  text-align: right;
+  font-weight: 400;
+  margin-right: 26px;
+}
+
+.DefinitionTable-description {
+  flex: 1;
+}
+.Code-root {
+  color: #b93068;
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+  background-color: #fafafa;
+  padding-left: 6px;
+  padding-right: 6px;
+  font-size: 12px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-weight: 400;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.Code-subtle {
+  color: #666;
+}
+.Spec-root:not(.Spec-is-nested) {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.Spec-entry {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.Spec-entry:not(:last-child) {
+  border-bottom: 1px solid #f0f0f0;
+}
+.HideyBox-root {
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+}
+
+.HideyBox-label {
+  font-weight: 500;
+  width: 180px;
+  text-align: right;
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.HideyBox-content {
+  border-top: 1px solid #f0f0f0;
+}
+.Param-root {
+  display: flex;
+  line-height: 1.6;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+
+.Param-meta {
+  flex: 0 0 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  white-space: nowrap;
+  margin-right: 24px;
+}
+
+.Param-id {
+  font-weight: 400;
+}
+
+.Param-type {
+  font-size: 11px;
+  color: #aaa;
+}
+
+.Param-description {
+  flex: 1;
+}
+
+.Param-em {
+  font-weight: 400;
+}
+
+.Param-nested {
+  padding-top: 18px;
+}
+
+.Param-required {
+  color: #ffae54;
+  font-size: 9px;
+  font-weight: 400;
+  text-transform: uppercase;
+}

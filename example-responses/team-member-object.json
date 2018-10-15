@@ -1,0 +1,11 @@
+{
+  "email": "jake@spiritai.com",
+  "created": "2018-10-10T07:31:27.046Z",
+  "role": "admin",
+  "assignments": {
+    "data": [],
+    "has_more": false,
+    "total_count": 0,
+    "url": "/assignments?assignee=jake@spiritai.com"
+  }
+}
