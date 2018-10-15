@@ -22587,7 +22587,7 @@ exports.lcFirst = exports.lowerCaseFirst = require('lower-case-first')
 module.exports = "/logo.6023b87e.png";
 },{}],"images/api.png":[function(require,module,exports) {
 module.exports = "/api.05e8f6f6.png";
-},{}],"../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{}],"node_modules/parcel/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -22619,7 +22619,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],"../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+},{}],"node_modules/parcel/src/builtins/css-loader.js":[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -22654,7 +22654,7 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"components/Layout/Layout.css":[function(require,module,exports) {
+},{"./bundle-url":"node_modules/parcel/src/builtins/bundle-url.js"}],"components/Layout/Layout.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -22670,7 +22670,7 @@ module.exports = {
   "headerAndNav": "Layout-header-and-nav",
   "apiText": "Layout-api-text"
 };
-},{"_css_loader":"../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/Layout/Layout.js":[function(require,module,exports) {
+},{"_css_loader":"node_modules/parcel/src/builtins/css-loader.js"}],"components/Layout/Layout.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22780,6 +22780,14 @@ var Section = function Section(_ref2) {
 exports.Section = Section;
 
 var _default = _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(Group, {
+  id: "Topics"
+}, _react.default.createElement(Section, {
+  id: "Introduction"
+}), _react.default.createElement(Section, {
+  id: "Errors"
+}), _react.default.createElement(Section, {
+  id: "Pagination"
+})), _react.default.createElement(Group, {
   id: "Resources"
 }, _react.default.createElement(Section, {
   id: "Team Members"
@@ -22791,24 +22799,17 @@ var _default = _react.default.createElement(_react.default.Fragment, null, _reac
   id: "Update a team member"
 }), _react.default.createElement(Section, {
   id: "List all team members"
-}))), _react.default.createElement(Group, {
-  id: "Topics"
+})), _react.default.createElement(Section, {
+  id: "Scopes"
 }, _react.default.createElement(Section, {
-  id: "Introduction"
+  id: "The scope object"
 }), _react.default.createElement(Section, {
-  id: "Errors"
+  id: "Retrieve a scope"
 }), _react.default.createElement(Section, {
-  id: "Pagination"
-})));
-/*
-      <Section id="Scopes">
-        <Section id="The scope object" />
-        <Section id="Retrieve a scope" />
-        <Section id="Update a scope" />
-        <Section id="List all scopes" />
-      </Section>
-      */
-
+  id: "Update a scope"
+}), _react.default.createElement(Section, {
+  id: "List all scopes"
+}))));
 
 exports.default = _default;
 },{"react":"node_modules/react/index.js"}],"node_modules/classnames/index.js":[function(require,module,exports) {
@@ -22882,7 +22883,7 @@ module.exports = {
   "sectionHeading": "Nav-section-heading",
   "subSection": "Nav-sub-section"
 };
-},{"_css_loader":"../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/Nav/Nav.js":[function(require,module,exports) {
+},{"_css_loader":"node_modules/parcel/src/builtins/css-loader.js"}],"components/Nav/Nav.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -23348,7 +23349,7 @@ module.exports = {
   "spec": "PrimaryContent-spec",
   "subHeading": "PrimaryContent-sub-heading"
 };
-},{"_css_loader":"../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/PrimaryContent/PrimaryContent.js":[function(require,module,exports) {
+},{"_css_loader":"node_modules/parcel/src/builtins/css-loader.js"}],"components/PrimaryContent/PrimaryContent.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -23435,7 +23436,7 @@ module.exports = {
   "p": "SecondaryContent-p",
   "request": "SecondaryContent-request"
 };
-},{"_css_loader":"../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/SecondaryContent/SecondaryContent.js":[function(require,module,exports) {
+},{"_css_loader":"node_modules/parcel/src/builtins/css-loader.js"}],"components/SecondaryContent/SecondaryContent.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -23515,7 +23516,7 @@ module.hot.accept(reloadCSS);
 module.exports = {
   "root": "Pre-root"
 };
-},{"_css_loader":"../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/Pre/Pre.js":[function(require,module,exports) {
+},{"_css_loader":"node_modules/parcel/src/builtins/css-loader.js"}],"components/Pre/Pre.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -23566,7 +23567,7 @@ module.hot.accept(reloadCSS);
 module.exports = {
   "root": "A-root"
 };
-},{"_css_loader":"../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/A/A.js":[function(require,module,exports) {
+},{"_css_loader":"node_modules/parcel/src/builtins/css-loader.js"}],"components/A/A.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -23624,7 +23625,7 @@ module.exports = {
   "secondary": "Section-secondary",
   "scored": "Section-scored"
 };
-},{"_css_loader":"../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/Section/Section.js":[function(require,module,exports) {
+},{"_css_loader":"node_modules/parcel/src/builtins/css-loader.js"}],"components/Section/Section.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -23736,7 +23737,7 @@ module.exports = {
   "term": "DefinitionTable-term",
   "description": "DefinitionTable-description"
 };
-},{"_css_loader":"../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/DefinitionTable/DefinitionTable.js":[function(require,module,exports) {
+},{"_css_loader":"node_modules/parcel/src/builtins/css-loader.js"}],"components/DefinitionTable/DefinitionTable.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -23799,7 +23800,7 @@ module.exports = {
   "root": "Code-root",
   "subtle": "Code-subtle"
 };
-},{"_css_loader":"../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/Code/Code.js":[function(require,module,exports) {
+},{"_css_loader":"node_modules/parcel/src/builtins/css-loader.js"}],"components/Code/Code.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -23857,7 +23858,7 @@ module.exports = {
   "entry": "Spec-entry",
   "isNested": "Spec-is-nested"
 };
-},{"_css_loader":"../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/Spec/Spec.js":[function(require,module,exports) {
+},{"_css_loader":"node_modules/parcel/src/builtins/css-loader.js"}],"components/Spec/Spec.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -23917,7 +23918,7 @@ module.exports = {
   "label": "HideyBox-label",
   "content": "HideyBox-content"
 };
-},{"_css_loader":"../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/HideyBox/HideyBox.js":[function(require,module,exports) {
+},{"_css_loader":"node_modules/parcel/src/builtins/css-loader.js"}],"components/HideyBox/HideyBox.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -24043,7 +24044,7 @@ module.exports = {
   "nested": "Param-nested",
   "required": "Param-required"
 };
-},{"_css_loader":"../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/Param/Param.js":[function(require,module,exports) {
+},{"_css_loader":"node_modules/parcel/src/builtins/css-loader.js"}],"components/Param/Param.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -52778,11 +52779,11 @@ function (_React$Component) {
     key: "updateSectionOffsets",
     value: function updateSectionOffsets() {
       this.sections = this.sections.map(function (s) {
-        return s.ref ? _objectSpread({}, s, {
-          offset: s.ref.current.offsetTop
-        }) : s;
+        return _objectSpread({}, s, {
+          offset: s.ref ? s.ref.current.offsetTop : Infinity
+        });
       }).sort(function (a, b) {
-        return a.offset > b.offset;
+        return a.offset - b.offset;
       });
     }
   }, {
@@ -52864,7 +52865,7 @@ var _App = _interopRequireDefault(require("./App"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _reactDom.render)((0, _react.createElement)(_App.default), document.getElementById('app-root'));
-},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./App":"App.js"}],"../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./App":"App.js"}],"node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -52891,7 +52892,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49523" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52352" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
@@ -53033,5 +53034,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},["../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","entry.js"], null)
+},{}]},{},["node_modules/parcel/src/builtins/hmr-runtime.js","entry.js"], null)
 //# sourceMappingURL=/entry.87c11fe2.map

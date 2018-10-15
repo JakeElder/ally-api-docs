@@ -41,9 +41,10 @@ export default class extends React.Component {
   }
 
   updateSectionOffsets() {
-    this.sections = this.sections.map(s => (
-      s.ref ?  { ...s, offset: s.ref.current.offsetTop } : s
-    )).sort((a, b) => (a.offset > b.offset))
+    this.sections = this.sections.map(s => ({
+      ...s,
+      offset: s.ref ? s.ref.current.offsetTop : Infinity
+    })).sort((a, b) => a.offset - b.offset)
   }
 
   createSectionRef(id) {
