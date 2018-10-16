@@ -19,7 +19,7 @@ const CreateAScope = () => (
         <Spec>
           <Param
             id="resource"
-            type="string"
+            isRequired
             description={
               <>
                 The resource to which the scope is to be applied to. One of <Code subtle>actors</Code>, <Code subtle>stories</Code>, <Code subtle>messages</Code>.
@@ -28,7 +28,7 @@ const CreateAScope = () => (
           />
           <Param
             id="criteria"
-            type="hash"
+            isRequired
             description={
               <>
                 The criteria under which objects of the type set as <Code subtle>resource</Code> should meet in order to fall within this scope. This hash can contain any arguments marked with the scope icon in the relavant resource list documentation (<A href="#list-actors">actors</A>, <A href="#list-stories">stories</A>, <A href="#list-messages">messages</A>).

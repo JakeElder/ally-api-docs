@@ -31,7 +31,7 @@ const ListTeamMembers = () => (
     </PrimaryContent.Root>
     <SecondaryContent.Root>
       <SecondaryContent.Request type="GET">
-        /team-members
+        /team_members
       </SecondaryContent.Request>
       <SecondaryContent.Heading>Example Response</SecondaryContent.Heading>
       <CodeBlock>

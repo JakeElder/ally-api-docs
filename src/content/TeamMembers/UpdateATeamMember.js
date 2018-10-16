@@ -31,7 +31,7 @@ const UpdateATeamMember = () => (
     </PrimaryContent.Root>
     <SecondaryContent.Root>
       <SecondaryContent.Request type="POST">
-        /team-members/&#123;email&#125;
+        /team_members/&#123;email&#125;
       </SecondaryContent.Request>
       <SecondaryContent.Heading>Example Response</SecondaryContent.Heading>
       <CodeBlock>{JSON.stringify(teamMemberObject, null, 2)}</CodeBlock>
