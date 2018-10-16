@@ -23,11 +23,15 @@ function mapGroups(groups, activeSection) {
 
 function mapSections(sections, activeSection) {
   return React.Children.map(sections, c => {
+    const { children } = c.props
+    const isChildActive = React.Children.toArray(children).some(
+      c => c.props.id === activeSection)
     return (
       <Nav.Entry
         id={paramCase(c.props.id)}
         label={c.props.id}
         isActive={c.props.id === activeSection}
+        isChildActive={isChildActive}
       >
         {mapSections(c.props.children, activeSection)}
       </Nav.Entry>

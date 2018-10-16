@@ -17,15 +17,19 @@ export const Section = ({ heading, children }) => (
   </div>
 )
 
-export const SubSection = ({ children }) => (
+export const SubSection = ({ isOpen, children }) => (
   children ?
-  <ul q="sub-section">{children}</ul> :
+  (
+    <ul q={classnames('sub-section', { 'is-open': isOpen })}>
+      {children}
+    </ul>
+  ) :
   null
 )
 
-export const Entry = ({ id, label, isActive, children }) => (
+export const Entry = ({ id, label, isActive, isChildActive, children }) => (
   <li q={classnames('entry', { 'is-active': isActive })}>
     <a href={`#${id}`} q="link">{label}</a>
-    <SubSection>{children}</SubSection>
+    <SubSection isOpen={isActive || isChildActive}>{children}</SubSection>
   </li>
 )

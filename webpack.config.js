@@ -11,7 +11,7 @@ module.exports = (env, { mode }) => {
     entry: './src/entry.js',
     devtool: DEV ? 'cheap-module-source-map' : false,
     output: {
-      path: path.resolve(__dirname, 'build'),
+      path: path.resolve(__dirname, 'dist'),
       filename: 'default.js',
       sourceMapFilename: '[file].map'
     },
