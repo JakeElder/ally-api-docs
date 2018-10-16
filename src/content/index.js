@@ -6,3 +6,4 @@ export { default as Pagination } from './Pagination'
 
 export * from './TeamMembers'
 export * from './Scopes'
+export * from './Assignments'

@@ -1,0 +1,10 @@
+{
+  "id": "manage-risky-active-senders",
+  "description": "Manage risky active senders",
+  "scopes": {
+    "data": [],
+    "pagination": {}
+  },
+  "assignee": "jake@spiritai.com",
+  "created": "2018-10-10T07:31:27.046Z"
+}

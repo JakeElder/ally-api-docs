@@ -24,6 +24,13 @@ export default (
         <Section id="Update a scope" />
         <Section id="List scopes" />
       </Section>
+      <Section id="Assignments">
+        <Section id="The assignment object" />
+        <Section id="Create an assignment" />
+        <Section id="Retrieve an assignment" />
+        <Section id="Update an assignment" />
+        <Section id="List assignments" />
+      </Section>
     </Group>
   </>
 )
