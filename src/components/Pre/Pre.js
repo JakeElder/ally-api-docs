@@ -1,9 +1,9 @@
 import React from 'react'
-import s from './Pre.css'
+import './Pre.css'
 
 const Pre = ({ children, fontSize }) => (
   <pre
-    className={s.root}
+    q="root"
     style={{ fontSize: fontSize && fontSize }}
   >
     {children}

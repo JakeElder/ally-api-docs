@@ -40,10 +40,15 @@ export default class extends React.Component {
     this.updateActiveSection()
   }
 
+  componentDidUpdate() {
+    this.updateSectionOffsets()
+    this.updateActiveSection()
+  }
+
   updateSectionOffsets() {
     this.sections = this.sections.map(s => ({
       ...s,
-      offset: s.ref ? s.ref.current.offsetTop : Infinity
+      offset: s.ref && s.ref.current ? s.ref.current.offsetTop : Infinity
     })).sort((a, b) => a.offset - b.offset)
   }
 
@@ -59,14 +64,16 @@ export default class extends React.Component {
   }
 
   getActiveSection() {
-    const sections = this.sections.filter(s => s.ref)
+    const { sections } = this
     const contentEl = this.contentRef.current
     const { scrollTop, scrollHeight, offsetHeight } = contentEl
     if (scrollHeight - offsetHeight === scrollTop) {
       return sections[sections.length - 1].id
     }
     const idx = sections.findIndex(s => scrollTop < s.offset)
-    return sections[(idx > -1 ? idx : sections.length) - 1].id
+    return sections[
+      Math.max((idx > -1 ? idx : sections.length) - 1, 0)
+    ].id
   }
 
   updateActiveSection() {

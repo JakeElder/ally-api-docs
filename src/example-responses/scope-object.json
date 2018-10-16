@@ -1,0 +1,9 @@
+{
+  "id": "risky-active-senders",
+  "label": "Risky active senders",
+  "resource": "actors",
+  "criteria": {
+    "open_story_involvement_where_sender_min": 1,
+    "risk_min": 0.5
+  }
+}

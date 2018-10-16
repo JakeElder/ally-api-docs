@@ -15,7 +15,7 @@ export default () => (
     <PrimaryContent.Root>
       <PrimaryContent.Heading>Pagination</PrimaryContent.Heading>
       <PrimaryContent.P>
-        All top-level API resources have support for bulk fetches via "list" API methods. For instance, you can list actors, stories and messages. These list API methods share a common structure, taking at least these two parameters: <Code>limit</Code> and <Code>page-number</Code>.
+        All top-level API resources have support for bulk fetches via "list" API methods. For instance, you can list actors, stories and messages. These list API methods share a common structure, taking at least these three parameters: <Code>limit</Code> <Code>starting_after</Code> and <Code>ending_before</Code>.
       </PrimaryContent.P>
       <PrimaryContent.Spec>
         <PrimaryContent.SubHeading>Attributes</PrimaryContent.SubHeading>
@@ -26,9 +26,22 @@ export default () => (
             description="A limit on the number of objects to be returned, between 1 and 100."
           />
           <Param
-            id="page-number"
-            type="optional string"
-            description="The page of objects to be returned."
+            id="starting_after"
+            type="optional"
+            description={
+              <>
+                A cursor for use in pagination. <Code>starting_after</Code> is an object Id that defines your place in the list. For instance, if you make a list request and receive 100 objects, ending with obj_foo, your subsequent call can include starting_after=obj_foo in order to fetch the next page of the list.
+              </>
+            }
+          />
+          <Param
+            id="starting_before"
+            type="optional"
+            description={
+              <>
+                As above, but used to fetch the previous page of the list.
+              </>
+            }
           />
         </Spec>
       </PrimaryContent.Spec>
@@ -51,14 +64,19 @@ export default () => (
               description="The limit supplied as a parameter, or 10 by default."
             />
             <Param
-              id="total-count"
+              id="total_count"
+              type="integer"
+              description="The total number of resources, regardless of any filtering criteria."
+            />
+            <Param
+              id="matched_count"
               type="integer"
               description="The total number of resources matching the current query."
             />
             <Param
-              id="page-number"
-              type="integer"
-              description="The current page number."
+              id="has_more"
+              type="boolean"
+              description="Whether or not there are more elements available after this set."
             />
           </Param>
         </Spec>

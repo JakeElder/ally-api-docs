@@ -1,7 +1,7 @@
 {
   "name": "@jakeelder/ally-api-docs",
   "version": "0.1.0",
-  "script": {
+  "scripts": {
     "develop": "webpack-dev-server --mode=development",
     "build": "webpack --mode=production"
   },
@@ -14,13 +14,17 @@
     "@babel/runtime": "^7.1.2",
     "babel-loader": "^8.0.4",
     "babel-plugin-react-css-modules": "^3.4.2",
+    "change-case": "^3.0.2",
+    "classnames": "^2.2.6",
     "css-loader": "^1.0.0",
     "file-loader": "^2.0.0",
     "html-webpack-plugin": "^3.2.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-hot-loader": "^4.3.11",
+    "react-syntax-highlighter": "^9.0.0",
     "reset-css": "^4.0.1",
+    "style-loader": "^0.23.1",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.9"

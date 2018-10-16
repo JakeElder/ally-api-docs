@@ -5,14 +5,14 @@ import s from './Param.css'
 
 const Type = ({ children }) => (
   children ?
-  <span className={s.type}>{children}</span> :
+  <span q="type">{children}</span> :
   null
 )
 
 const NestedParams = ({ children }) => {
   if (!children) { return null }
   return (
-    <div className={s.nested}>
+    <div q="nested">
       <HideyBox
         label={isOpen => `${isOpen ? 'Hide' : 'Show'} child attributes`}
       >
@@ -24,7 +24,7 @@ const NestedParams = ({ children }) => {
 
 const Required = ({ isRequired }) => (
   isRequired ?
-  <span className={s.required}>required</span> :
+  <span q="required">required</span> :
   null
 )
 
@@ -37,13 +37,13 @@ const Param = ({
 }) => {
   return (
     <>
-      <div className={s.root}>
-        <div className={s.meta}>
-          <span className={s.id}>{id}</span>
+      <div q="root">
+        <div q="meta">
+          <span q="id">{id}</span>
           <Type>{type}</Type>
           <Required isRequired={isRequired} />
         </div>
-        <div className={s.description}>
+        <div q="description">
           {description}
         </div>
       </div>
@@ -53,7 +53,7 @@ const Param = ({
 }
 
 Param.Em = ({ children }) => (
-  <em className={s.em}>{children}</em>
+  <em q="em">{children}</em>
 )
 
 export default Param

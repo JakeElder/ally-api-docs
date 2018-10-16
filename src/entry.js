@@ -1,4 +1,4 @@
-import { createElement } from 'react'
+import React, { createElement } from 'react'
 import { render } from 'react-dom'
 import { hot } from 'react-hot-loader'
 import App from './App'

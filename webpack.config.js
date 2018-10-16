@@ -15,10 +15,7 @@ module.exports = (env, { mode }) => {
       filename: 'default.js',
       sourceMapFilename: '[file].map'
     },
-    devServer: {
-      hot: true,
-      https: true
-    },
+    devServer: { hot: true },
     module: { rules: [] },
     plugins: [],
   }
@@ -50,13 +47,16 @@ module.exports = (env, { mode }) => {
     include: path.resolve(__dirname, 'src'),
     use: [{
       loader: 'style-loader',
+      options: {
+        sourceMap: DEV
+      }
     }, {
       loader: 'css-loader',
       options: {
         importLoaders: 1,
         localIdentName: '[name]-[local]',
         modules: true,
-        // sourceMap: DEV,
+        sourceMap: DEV,
         // minimize: !DEV
       }
     }]
@@ -65,7 +65,7 @@ module.exports = (env, { mode }) => {
   // Plugins
   config.plugins.push(
     new HtmlPlugin({
-      title: 'Lets Throw Axes',
+      title: 'Ally API Docs',
       template: './src/index.html'
     })
   )

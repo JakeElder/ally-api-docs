@@ -9,11 +9,11 @@ import Param from '../../components/Param'
 import A from '../../components/A'
 import teamMemberObject from '../../example-responses/team-member-object.json'
 
-const UpdateATeamMember = () => (
+const ListTeamMembers = () => (
   <Section>
     <PrimaryContent.Root>
-      <PrimaryContent.Heading>Update a team member</PrimaryContent.Heading>
-      <PrimaryContent.P>Updates the specified team member. Currently only the <Code>rank</Code> can be set using this API. The <A href="#assignments">assignments API</A> should be used to update assignments</PrimaryContent.P>
+      <PrimaryContent.Heading>List team members</PrimaryContent.Heading>
+      <PrimaryContent.P>Returns a list of team members. Accepts the following arguments, In addition to the <A href="#pagination">pagination attributes</A></PrimaryContent.P>
       <PrimaryContent.Spec>
         <PrimaryContent.SubHeading>Arguments</PrimaryContent.SubHeading>
         <Spec>
@@ -22,7 +22,7 @@ const UpdateATeamMember = () => (
             type="string"
             description={
               <>
-                The rank the user should be assigned. Either <Code subtle>admin</Code> or <Code subtle>moderator</Code>
+                Filters the results to include only actors of this rank. Either <Code subtle>admin</Code> or <Code subtle>moderator</Code>.
               </>
             }
           />
@@ -30,14 +30,29 @@ const UpdateATeamMember = () => (
       </PrimaryContent.Spec>
     </PrimaryContent.Root>
     <SecondaryContent.Root>
-      <SecondaryContent.Request type="POST">
-        /team-members/&#123;email&#125;
+      <SecondaryContent.Request type="GET">
+        /team-members
       </SecondaryContent.Request>
       <SecondaryContent.Heading>Example Response</SecondaryContent.Heading>
-      <CodeBlock>{JSON.stringify(teamMemberObject, null, 2)}</CodeBlock>
+      <CodeBlock>
+        {
+          JSON.stringify({
+            data: [
+              { ...teamMemberObject },
+              {
+                ...teamMemberObject,
+                email: "tom@spiritai.com",
+                created: "2018-11-19T07:31:27.046Z"
+              }
+            ],
+            pagination: {}
+          }, null, 2)
+        }
+      </CodeBlock>
     </SecondaryContent.Root>
   </Section>
 )
 
-export default UpdateATeamMember
+export default ListTeamMembers
+
 

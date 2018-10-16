@@ -1,11 +1,11 @@
 import React from 'react'
 import A from '../A'
-import s from './HideyBox.css'
+import './HideyBox.css'
 
 const Content = ({ show, children }) => {
   if (!show) { return null }
   return (
-    <div className={s.content}>
+    <div q="content">
       {children}
     </div>
   )
@@ -27,9 +27,9 @@ class HideyBox extends React.Component {
     const { isOpen } = this.state
 
     return (
-      <div className={s.root}>
+      <div q="root">
         <div
-          className={s.label}
+          q="label"
           onClick={this.toggleVisibility}
         >
           <A>{label(isOpen)}</A>

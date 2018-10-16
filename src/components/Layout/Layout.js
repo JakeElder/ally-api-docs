@@ -6,32 +6,32 @@ import s from './Layout.css'
 const Layout = ({ children, contentRef, onContentScroll }) => {
   const [nav, content] = React.Children.toArray(children)
   return (
-    <div className={s.root}>
-      <div className={s.headerAndNav}>
-        <header className={s.header}>
-          <h1 className={s.heading}>
+    <div q="root">
+      <div q="header-and-nav">
+        <header q="header">
+          <h1 q="heading">
             <img
+              q="logo"
               src={logo}
               width={100}
               height={29}
-              className={s.logo}
               alt="Spirit Ally"
             />
             <img
+              q="api-text"
               src={apiText}
               width={25}
               height={18}
-              className={s.apiText}
               alt="Spirit Ally"
             />
           </h1>
         </header>
-        <div className={s.nav}>
+        <div q="nav">
           {nav}
         </div>
       </div>
       <div
-        className={s.content}
+        q="content"
         ref={contentRef} 
         onScroll={onContentScroll}
       >

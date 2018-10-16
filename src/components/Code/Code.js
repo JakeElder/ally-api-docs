@@ -1,9 +1,9 @@
 import React from 'react'
 import classnames from 'classnames'
-import s from './Code.css'
+import './Code.css'
 
 const Code = ({ children, subtle }) => (
-  <code className={classnames(s.root, { [s.subtle]: subtle })}>
+  <code q={classnames('root', { subtle })}>
     {children}
   </code>
 )

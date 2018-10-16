@@ -1,24 +1,24 @@
 import React from 'react'
-import s from './PrimaryContent.css'
+import './PrimaryContent.css'
 
 export const Root = ({ children }) => (
-  <div className={s.root}>
+  <div q="root">
     {children}
   </div>
 )
 
 export const Heading = ({ children }) => (
-  <h1 className={s.heading}>{children}</h1>
+  <h1 q="heading">{children}</h1>
 )
 
 export const SubHeading = ({ children }) => (
-  <h1 className={s.subHeading}>{children}</h1>
+  <h1 q="sub-heading">{children}</h1>
 )
 
 export const P = ({ children }) => (
-  <p className={s.p}>{children}</p>
+  <p q="p">{children}</p>
 )
 
 export const Spec = ({ children }) => (
-  <div className={s.spec}>{children}</div>
+  <div q="spec">{children}</div>
 )

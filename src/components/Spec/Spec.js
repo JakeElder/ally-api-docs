@@ -1,16 +1,11 @@
 import React from 'react'
 import classnames from 'classnames'
-import s from './Spec.css'
+import './Spec.css'
 
 const Spec = ({ children, id, isNested }) => (
-  <ul className={classnames(s.root, { [s.isNested]: isNested })}>
+  <ul q={classnames('root', { 'is-nested': isNested })}>
     {React.Children.map(children, e => (
-      <li
-        key={`${id}:${e.props.id}`}
-        className={s.entry}
-      >
-        {e}
-      </li>
+      <li q="entry" key={`${id}:${e.props.id}`}>{e}</li>
     ))}
   </ul>
 )

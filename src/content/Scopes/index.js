@@ -1,0 +1,6 @@
+export { default as Scopes } from './Scopes'
+export { default as TheScopeObject } from './TheScopeObject'
+export { default as CreateAScope } from './CreateAScope'
+export { default as RetrieveAScope } from './RetrieveAScope'
+export { default as UpdateAScope } from './UpdateAScope'
+export { default as ListScopes } from './ListScopes'

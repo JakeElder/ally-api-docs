@@ -15,13 +15,14 @@ export default (
         <Section id="The team member object" />
         <Section id="Retrieve a team member" />
         <Section id="Update a team member" />
-        <Section id="List all team members" />
+        <Section id="List team members" />
       </Section>
       <Section id="Scopes">
         <Section id="The scope object" />
+        <Section id="Create a scope" />
         <Section id="Retrieve a scope" />
         <Section id="Update a scope" />
-        <Section id="List all scopes" />
+        <Section id="List scopes" />
       </Section>
     </Group>
   </>
