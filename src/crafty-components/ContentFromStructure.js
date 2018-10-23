@@ -1,6 +1,5 @@
 import React, { Children } from 'react'
 import { paramCase, pascalCase } from 'change-case'
-import objectPath from 'object-path'
 import * as content from '../content'
 
 const CreateRef = React.createContext()
